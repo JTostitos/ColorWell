@@ -64,7 +64,7 @@ public struct ColorWellView<Label: View>: View {
     constructor = ViewConstructor {
       // TODO: Need an API that accepts a Binding<Bool> for showsAlpha.
       // For now, we'll just pass a constant.
-      RootView(color: _color, showsAlpha: .constant(true))
+      RootView(color: _color, showsAlpha: .constant(false))
     }
     .with { view in
       if let _action {
